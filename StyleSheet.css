@@ -1,0 +1,106 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+background-image: linear-gradient(bottom, rgb(235,94,0) 31%, rgb(180,214,174) 61%);
+background-image: -o-linear-gradient(bottom, rgb(235,94,0) 31%, rgb(180,214,174) 61%);
+background-image: -moz-linear-gradient(bottom, rgb(235,94,0) 31%, rgb(180,214,174) 61%);
+background-image: -webkit-linear-gradient(bottom, rgb(235,94,0) 31%, rgb(180,214,174) 61%);
+background-image: -ms-linear-gradient(bottom, rgb(235,94,0) 31%, rgb(180,214,174) 61%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.31, rgb(235,94,0)),
+	color-stop(0.61, rgb(180,214,174))
+);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10pt;
+    color: White;
+}
+.invisible {
+    display:none;
+}
+.Menud{
+    width:200px;
+    text-align:right;
+    border:double;
+    border-color:black;
+    background-color:white;
+    padding:5px;
+    margin:5px;
+}
+
+.Registrar {
+    text-align:Center;
+    color:green;
+        
+}
+.AltaRestaurantes {
+    text-align:right;
+    color:blue;
+}
+
+h3 {
+    margin: auto;
+    padding: inherit;
+    font-family:Candara,Arial;
+    border:double;
+    text-align:center;
+    background-color:green;
+}
+
+ul.style3
+{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	list-style: none;
+	color: White 
+}
+
+ul.style3 li
+{
+	padding: 1.6em 0em 0em 0em;
+	margin: 0 0 1em 0;
+    text-align:center;
+}
+
+ul.style3 p
+{
+	margin: 0;
+}
+
+ul.style3 a
+{
+	display: block;
+	text-decoration: none;
+	color: Black;
+    font-family:Arial;
+    text-align:center;
+
+}
+ul.style3 h3
+{
+	padding: 1em 0em 5px 0em;
+	text-transform: uppercase;
+	font-size: 1.1em;
+	font-weight: 300;
+	color: #FFFFFF;
+}
+
+ul.style3 .first
+{
+	padding-top: 0;
+	background: none;
+    text-align:end;
+}
+/* pie de padina*/
+#box2
+{
+	float: left;
+	width: 436px;
+	padding: 0px 20px;
+    text-align:center;
+    background-position-x:center;
+}

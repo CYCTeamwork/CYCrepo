@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+        WWW.CLICKyCOMES.COM
+    </title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>        
+        <header>
+<!-- Encabezado -->
+    <asp:Menu CssClass="Menud" ID="MnPrincipal" runat="server" Orientation="Horizontal" >
+        <Items>    
+         <asp:MenuItem text="Inicio" NavigateUrl="~/Default.aspx"></asp:MenuItem> 
+            <asp:MenuItem text="Ingresar" NavigateUrl="~/Ingreso.aspx"></asp:MenuItem>
+            <asp:MenuItem Text="Resgistrate" NavigateUrl="~/AltaRestaurantes.aspx"></asp:MenuItem>
+            <asp:MenuItem text="Ayuda" NavigateUrl="~/Ayuda.aspx"></asp:MenuItem>
+
+        </Items>
+    </asp:Menu>
+<!-- Fin Encabezado -->
+        </header>
+
+
+<!-- Contenido -->         
+   <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+
+		<div id="box2">
+			<ul class="style3">
+				<li>
+					<h3>Imagenes</h3>
+					<p><a href="#" >EN ESTA PARTE LE DAREMOS UNA MUETRA DE IMAGENES DE LOS TIPOS DE RESTAURANTES QUE CUENTA NUESTRO SERVICIO
+                        <img style="text-align:center; width: 418px; height: 349px" src="Imagenes/platillos_animo.jpg"  /></a></p>                   
+				</li>
+				<li>
+			<h3>Elaboradores</h3>
+					<p><a href="#">AQUI SE MOSTRARA UN POCO DE LAS PERSONAS QUE ELABORARON LA PAGINA</a></p>
+				</li>
+				<li>
+			</ul>
+		</div>
+ <!-- Fin Contenido -->               
+    </div>
+    </form>
+</body>
+</html>
