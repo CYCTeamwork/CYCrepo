@@ -5,21 +5,21 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class _Default : System.Web.UI.Page
+public partial class Restaruante : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (Session["idUsuario"] != null)
+        if (Session["idRestaurante"] != null)
         {
             //Tomo el objeto de la memoria session y le hago un casting
             //a entero para poder buscar por ID
-            int id = (int)Session["idUsuario"];
+            int id = (int)Session["idRestauratne"];
 
             int returnVal = 0;
-            DSClientes ds = DataAccsesClientes.buscarClientePorClave(id, out returnVal);
+            DSRestaurantes ds = DataAccsesClientes.BusquedaPorClave(id, out returnVal);
 
-            LblBienvenida.Visible = true;
-            LblBienvenida.Text += ds.Clientes[0].NombreCliente;
+            Lblbienvenido.Visible = true;
+            Lblbienvenido.Text += ds.Restaurante[0].NombreRestaurante;
         }
     }
 }

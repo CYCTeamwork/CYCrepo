@@ -20,6 +20,7 @@ public partial class Ingreso : System.Web.UI.Page
         String Password = TbContraseña.Text.Trim();
         int returnValida;
         DSClientes ds = DataAccsesClientes.buscarClientePorNombre(nombreUsuario.Trim(), out returnValida);
+        DSRestaurantes dsr = DataAccsesClientes.BusquedaPorNombre(nombreUsuario.Trim(), out returnValida);
 
         //Verificando si el usuario existe
         if (returnValida > 0)
@@ -32,7 +33,13 @@ public partial class Ingreso : System.Web.UI.Page
                 Session["idUsuario"] = ds.Clientes[0].Clave_Cliente;
                 Response.Redirect("Default.aspx");
             }
+            if (dsr.Restaurante[0].Contraseña ==Password.Trim())
+            {
+                Session["idRestaurante"] = dsr.Restaurante[0].ClaveRestaurante;
+                Response.Redirect("Restaurantes.aspx");
+            }
         }
+        
 
     }
 }

@@ -22,7 +22,7 @@
         </tr>
         <tr>  
             <td colspan="2" style="text-align:center">  
-            <asp:Button ID="BtnIngreso" runat="server" Text="Ingresar" OnClick="BtnIngreso_Click" style="width: 68px" />
+            <asp:Button ID="BtnIngreso" runat="server" Text="Ingresar" OnClick="BtnIngreso_Click" style="width: 68px; height: 26px;" />
             </td>
              <td>
              <asp:Label ID="LblErroresIngreso" runat="server" Text=""></asp:Label>

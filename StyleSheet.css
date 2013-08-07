@@ -24,12 +24,18 @@ background-image: -webkit-gradient(
 .Menud{
     width:200px;
     text-align:right;
-    border:double;
     border-color:black;
     background-color:white;
     padding:5px;
     margin:5px;
 }
+.MenuRestaurantes {
+    width:300px;
+    text-align:right;  
+    padding:10px;
+    margin:10px
+}
+
 
 .Registrar {
     text-align:Center;

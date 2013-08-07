@@ -13,8 +13,6 @@ public partial class AltaRestaurantes : System.Web.UI.Page
     }
     protected void BtnResgistro_Click(object sender, EventArgs e)
     {
-        DataAccsesClientes dac = new DataAccsesClientes();
-
         String NombreRestaurante = TbNombreRestaurante.Text.Trim();
         String Telefono = TbTelefono.Text;
         String Domicilio = TbDomicilio.Text;
