@@ -16,7 +16,7 @@ public partial class AltaRestaurantes : System.Web.UI.Page
         String NombreRestaurante = TbNombreRestaurante.Text.Trim();
         String Telefono = TbTelefono.Text;
         String Domicilio = TbDomicilio.Text;
-        int  ServicioDomicilio = int.Parse(TbServicio.Text);
+        int  ServicioDomicilio = int.Parse(DdlServicio.Text);
         String Password = Tbcontraseña.Text.Trim();
         String Confirmacion = TbConfirmar.Text.Trim();
         if (NombreRestaurante.Length > 0 && Password.Length > 0)

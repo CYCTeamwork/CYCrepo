@@ -63,7 +63,7 @@
       <asp:Panel runat="server" ID="pnlRestaurant" ClientIDMode="Static">
           <table>
             <tr class="AltaRestaurantes">
-            <td colspan="10" style="text-align:center">
+            <td style="text-align:center">
              <asp:Label ID="LblNombreRestaruante" runat="server" Text="Nombre De Restaurantes"></asp:Label>
             </td>
             <td>
@@ -71,7 +71,7 @@
             </td>
         </tr>
             <tr class="AltaRestaurantes">
-            <td colspan="10" style="text-align:center">
+            <td style="text-align:center">
              <asp:Label ID="lblTelefono" runat="server" Text="Telefono"></asp:Label>
             </td>
             <td>
@@ -79,7 +79,7 @@
             </td>
         </tr>
               <tr class="AltaRestaurantes">
-            <td colspan="10" style="text-align:center">
+            <td style="text-align:center">
              <asp:Label ID="LblDomicilio" runat="server" Text="Domicilio"></asp:Label>
             </td>
             <td>
@@ -87,15 +87,18 @@
             </td>
         </tr>
         <tr class="AltaRestaurantes">
-            <td colspan="10" style="text-align:center">
+            <td style="text-align:center">
              <asp:Label ID="LblServicio" runat="server" Text="Servicio a Domicilio"></asp:Label>
             </td>
             <td>
-             <asp:TextBox ID="TbServicio" runat="server"></asp:TextBox>
+                <asp:DropDownList ID="DdlServicio" runat="server">
+                    <asp:ListItem Text="No" Value="1" />
+                    <asp:ListItem Text="Si" Value="2" />
+                </asp:DropDownList>
             </td>
         </tr>
         <tr class="AltaRestaurantes">
-            <td colspan="10" style="text-align:center">
+            <td style="text-align:center">
              <asp:Label ID="LblContraseña" runat="server" Text="Contraseña"></asp:Label>
             </td>
             <td>
@@ -103,7 +106,7 @@
             </td>
         </tr>
         <tr class="AltaRestaurantes">
-            <td colspan="10" style="text-align:center">
+            <td style="text-align:center">
              <asp:Label ID="LblConfirmar" runat="server" Text="Confirmar"></asp:Label>
             </td>
             <td>
@@ -111,10 +114,10 @@
             </td>
         </tr>
        <tr class="AltaRestaurantes">                        
-            <td colspan="10" style="text-align:center">  
+            <td style="text-align:center">  
             <asp:Button ID="BtnResgistrar" runat="server" Text="Registro "  OnClick="BtnResgistro_Click"  />
             </td>
-             <td colspan="10" style="text-align:center">
+             <td style="text-align:center">
              <asp:Label ID="LblerrorRestaurante" runat="server" Text="" ForeColor="Red"></asp:Label>
             </td>
         </tr>
