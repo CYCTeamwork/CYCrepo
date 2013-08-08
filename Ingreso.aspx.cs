@@ -16,6 +16,8 @@ public partial class Ingreso : System.Web.UI.Page
     protected void BtnIngreso_Click(object sender, EventArgs e)
     {
         LblErroresIngreso.Text="";
+        TbContraseña.Text = "";
+        TbUsuario.Text = "";
         String nombreUsuario = TbUsuario.Text.Trim();
         String Password = TbContraseña.Text.Trim();
         int returnValida;

@@ -152,6 +152,26 @@ public class DataAccsesClientes
 
         return returnVal;
     }
+    public static int borrarPlatillo (string NombrePlatillo)
+    {
+        TAPlatillos ta = new TAPlatillos();
+        DSPlatillos ds = new DSPlatillos();
+        int returnValida;
+        try
+        {
+            //Aqui se adquirira la informcion de la base de datos y la cantidad
+            returnValida = ta.BorrarPlatillos(NombrePlatillo);
+        }
+        catch (Exception exp)
+        {
+            //Esto se hace cuando la conexion truena.
+            returnValida = -1;
+            String mensajeError = exp.Message;
+        }
+
+        return returnValida;
+    }
+
 
    /* public static DSPlatillos ModificarPlatillo(string NombrePlatillo, string Descripcion, decimal Precio)
     {

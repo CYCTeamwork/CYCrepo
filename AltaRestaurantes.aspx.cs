@@ -13,6 +13,12 @@ public partial class AltaRestaurantes : System.Web.UI.Page
     }
     protected void BtnResgistro_Click(object sender, EventArgs e)
     {
+        TbConfirmar.Text = "";
+        Tbcontraseña.Text = "";
+        TbDomicilio.Text = "";
+        TbNombreRestaurante.Text = "";
+        TbTelefono.Text = "";
+        LblerrorRestaurante.Text = "";
         String NombreRestaurante = TbNombreRestaurante.Text.Trim();
         String Telefono = TbTelefono.Text;
         String Domicilio = TbDomicilio.Text;
@@ -48,7 +54,11 @@ public partial class AltaRestaurantes : System.Web.UI.Page
     }
     protected void BtnIngreso_Click(object sender, EventArgs e)
     {
-
+        TbContraseñaCliente.Text = "";
+        TbDomicilioCliente.Text = "";
+        TbPassword.Text = "";
+        TbTelefonoCliente.Text = "";
+        LblErrores.Text = "";
         String NombreCliente = TbNombre.Text.Trim();
         String Telefono = TbTelefonoCliente.Text.Trim();
         String Domicilio = TbDomicilioCliente.Text.Trim();

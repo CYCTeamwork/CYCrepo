@@ -92,6 +92,7 @@
             </td>
             <td>
                 <asp:DropDownList ID="DdlServicio" runat="server">
+                    <asp:ListItem Text="selecione si tiene servicio" Value="0"/>
                     <asp:ListItem Text="No" Value="1" />
                     <asp:ListItem Text="Si" Value="2" />
                 </asp:DropDownList>
