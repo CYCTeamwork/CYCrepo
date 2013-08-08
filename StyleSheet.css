@@ -8,16 +8,32 @@ background-image: -webkit-linear-gradient(bottom, rgb(235,94,0) 31%, rgb(180,214
 background-image: -ms-linear-gradient(bottom, rgb(235,94,0) 31%, rgb(180,214,174) 61%);
 
 background-image: -webkit-gradient(
-	linear,
-	left bottom,
-	left top,
-	color-stop(0.31, rgb(235,94,0)),
-	color-stop(0.61, rgb(180,214,174))
-);
+	    linear,
+	    left bottom,
+	    left top,
+	    color-stop(0.31, rgb(235,94,0)),
+	    color-stop(0.61, rgb(180,214,174))
+    );
     font-family: 'Open Sans', sans-serif;
     font-size: 10pt;
     color: White;
 }
+
+#titulo{
+    color: green; 
+    font-family:'Buxton Sketch', Times, serif; 
+    font-size:40px; 
+    font-weight: normal; 
+    font-style: inherit; 
+    font-variant: normal; 
+    text-transform: capitalize;
+    text-align:center 
+}
+
+    #titulo:hover {
+        color:red;
+    }
+
 .invisible {
     display:none;
 }

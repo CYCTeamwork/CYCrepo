@@ -24,11 +24,12 @@ public partial class Registrar : System.Web.UI.Page
         String confirmacion = TbConfirmar.Text.Trim();
         String TipoUsuario = Ddltipo.SelectedValue;
 
+        int regresarVal = 0;
         if (NombreCliente.Length > 0 && Password.Length > 0)
         {
             if (TbConfirmar.Text == Password)
             {
-                int regresarVal = dac.altaCuentas(NombreCliente,Telefono, Domicilio, Password);
+                //int regresarVal = dac.altaCuentas(NombreCliente,Telefono, Domicilio, Password);
 
                 if (regresarVal > 0)
                 {
