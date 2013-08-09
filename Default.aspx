@@ -7,7 +7,7 @@
           
       
     </div>
-    <div>
+   
 <div style="margin:30px auto;max-width:600px;">
     
     <!-- Insert to your webpage where you want to display the slider -->

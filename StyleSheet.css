@@ -1,5 +1,5 @@
 ﻿body {
- background: url(http://localhost:9634/CYCrepo/Imagenes/url.jpg) no-repeat center center fixed; 
+ background: url(http://localhost:9634/CYCrepo/Imagenes/img-wallpapers-background-by-tic-tic-18456.png) no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -241,7 +241,7 @@ float:right;
 display:block;position:relative;margin:16px auto 56px;
 }
 #MensajeB {
- background-image: url();
+ background-image: url(http://localhost:9634/CYCrepo/Imagenes/FIBRA.jpeg);
  height:500px;
  width:400px;float:left;
  position:relative;
@@ -249,4 +249,5 @@ display:block;position:relative;margin:16px auto 56px;
  color:white;
  font-family:'Arial Unicode MS';
  padding:0.5em;
+ border-radius:10px;
 }
