@@ -1,5 +1,5 @@
 ﻿body {
- background: url(http://localhost:4932/CYCrepo/Imagenes/img-wallpapers-background-by-tic-tic-18456.png) no-repeat center center fixed; 
+ background: url(http://localhost:9634/CYCrepo/Imagenes/url.jpg) no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -231,7 +231,7 @@ ul.style3 .first
 
 #BOXP {
 border:solid black 1em;
-background:url(http://localhost:4932/CYCrepo/Imagenes/Carbon Fiber.jpg);
+background:url();
 background-repeat:no-repeat;
 max-width:640px;
 max-height:480px;
@@ -241,7 +241,7 @@ float:right;
 display:block;position:relative;margin:16px auto 56px;
 }
 #MensajeB {
- background-image: url(http://localhost:4932/CYCrepo/Imagenes/FIBRA.jpeg);
+ background-image: url();
  height:500px;
  width:400px;float:left;
  position:relative;
