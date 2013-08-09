@@ -33,6 +33,7 @@ public partial class AltaPlatillos : System.Web.UI.Page
             {
             LblErrorPlatillo.Text = "Error en Base De Datos, Comunicarse Con Nosotros";
 
+
             }
         }
 

@@ -2,9 +2,12 @@
 
 <!DOCTYPE html>
 <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
-
+ <script src="sliderengine/jquery.js"></script>
+    <script src="sliderengine/amazingslider.js"></script>
+    <script src="sliderengine/initslider-1.js"></script>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+
     <title>
         WWW.CLICKyCOMES.COM
     </title>
@@ -12,11 +15,11 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server"  >
     <div>        
         <header>
 <!-- Encabezado -->
-    <asp:Menu CssClass="Menud" ID="MnPrincipal" runat="server" Orientation="Horizontal" >
+   <!-- <asp:Menu CssClass="Menud" ID="MnPrincipal" runat="server" Orientation="Horizontal" >
         <Items>    
          <asp:MenuItem text="Inicio" NavigateUrl="~/Default.aspx"></asp:MenuItem> 
             <asp:MenuItem text="Ingresar" NavigateUrl="~/Ingreso.aspx"></asp:MenuItem>
@@ -26,6 +29,17 @@
         </Items>
     </asp:Menu>
 <!-- Fin Encabezado -->
+<div id='cssmenu'>
+<ul>
+   <li><a href='Default.aspx'><span>Inicio</span></a></li>
+   <li><a href='Ingreso.aspx'><span>Ingresar</span></a></li>
+   <li><a href='AltaRestaurantes.aspx''><span>Registros</span></a></li>
+   <li class='last'><a href='Ayuda.aspx'><span>Contacto</span></a></li>
+</ul>
+</div>
+
+
+
         </header>
 
 
@@ -33,18 +47,19 @@
    <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
 
 		<div id="box2">
-			<ul class="style3">
-				<li>
-					<h3>Imagenes</h3>
-					<p><a href="#" >EN ESTA PARTE LE DAREMOS UNA MUETRA DE IMAGENES DE LOS TIPOS DE RESTAURANTES QUE CUENTA NUESTRO SERVICIO
-                        <img style="text-align:center; width: 418px; height: 349px" src="Imagenes/platillos_animo.jpg"  /></a></p>                   
-				</li>
-				<li>
-			<h3>Elaboradores</h3>
-					<p><a href="#">AQUI SE MOSTRARA UN POCO DE LAS PERSONAS QUE ELABORARON LA PAGINA</a></p>
-				</li>
-				<li>
-			</ul>
+	 <!-- AddThis Smart Layers BEGIN -->
+<!-- Go to http://www.addthis.com/get/smart-layers to customize -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5204744006a52bed"></script>
+<script type="text/javascript">
+    addthis.layers({
+        'theme': 'dark',
+        'share': {
+            'position': 'right',
+            'numPreferredServices': 5
+        }
+    });
+</script>
+<!-- AddThis Smart Layers END -->
 		</div>
  <!-- Fin Contenido -->               
     </div>

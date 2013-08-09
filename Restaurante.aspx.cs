@@ -13,13 +13,14 @@ public partial class Restaruante : System.Web.UI.Page
         {
             //Tomo el objeto de la memoria session y le hago un casting
             //a entero para poder buscar por ID
-            int id = (int)Session["idRestauratne"];
-
+            int id = (int)Session["idRestaurante"];
             int returnVal = 0;
+            // se tomara el tipo de usuario 
             DSRestaurantes ds = DataAccsesClientes.BusquedaPorClave(id, out returnVal);
 
             Lblbienvenido.Visible = true;
             Lblbienvenido.Text += ds.Restaurante[0].NombreRestaurante;
+           
         }
     }
 }
