@@ -248,6 +248,15 @@ display:block;position:relative;margin:16px auto 56px;
  background-repeat:no-repeat;
  color:white;
  font-family:'Arial Unicode MS';
- padding:0.5em;
+ padding:1.5em;
  border-radius:10px;
+ float:left;
 }
+#MensajeB p{
+    margin:0.5em;
+}
+#divslider {
+margin:30px auto;
+max-width:600px;
+}
+
