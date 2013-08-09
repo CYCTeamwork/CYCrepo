@@ -38,5 +38,9 @@ public partial class BorrarPlatillos : System.Web.UI.Page
             }
 
           }
+        TbBorrar.Text = "";
+        TbConfirmarplatillo.Text = "";
+        TbContraseñaPlatillos.Text = "";
+        LblErrorBorrado.Text = "";
        }
   }

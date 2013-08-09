@@ -15,9 +15,6 @@ public partial class AltaPlatillos : System.Web.UI.Page
     }
     protected void BtnResgistro_Click(object sender, EventArgs e)
     {
-        TbPrecio.Text = "";
-        TbNombrePlatillo.Text = "";
-        TbDescripcion.Text = "";
         String NombrePlatillos = TbNombrePlatillo.Text.Trim();
         String Descripcion = TbDescripcion.Text;
         int Precio = int.Parse(TbPrecio.Text);
@@ -35,6 +32,9 @@ public partial class AltaPlatillos : System.Web.UI.Page
 
 
             }
+        TbPrecio.Text = "";
+        TbNombrePlatillo.Text = "";
+        TbDescripcion.Text = "";
         }
 
 }
