@@ -5,6 +5,7 @@
  <script src="sliderengine/jquery.js"></script>
     <script src="sliderengine/amazingslider.js"></script>
     <script src="sliderengine/initslider-1.js"></script>
+    
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     
@@ -19,7 +20,7 @@
     <div>        
         <header>
 <!-- Encabezado -->
-   <!-- <asp:Menu CssClass="Menud" ID="MnPrincipal" runat="server" Orientation="Horizontal" >
+    <asp:Menu CssClass="Menud" ID="MnPrincipal" runat="server" Orientation="Horizontal" >
         <Items>    
          <asp:MenuItem text="Inicio" NavigateUrl="~/Default.aspx"></asp:MenuItem> 
             <asp:MenuItem text="Ingresar" NavigateUrl="~/Ingreso.aspx"></asp:MenuItem>
@@ -29,14 +30,15 @@
         </Items>
     </asp:Menu>
 <!-- Fin Encabezado -->
-<div id='cssmenu'>
+<!--
+            <div id='cssmenu'>
 <ul>
    <li><a href='Default.aspx'><span>Inicio</span></a></li>
    <li><a href='Ingreso.aspx'><span>Ingresar</span></a></li>
    <li><a href='AltaRestaurantes.aspx''><span>Registros</span></a></li>
    <li class='last'><a href='Ayuda.aspx'><span>Contacto</span></a></li>
 </ul>
-</div>
+</div>--HTML menu termina-->
 
 
 

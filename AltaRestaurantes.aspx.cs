@@ -16,14 +16,13 @@ public partial class AltaRestaurantes : System.Web.UI.Page
         String NombreRestaurante = TbNombreRestaurante.Text.Trim();
         String Telefono = TbTelefono.Text;
         String Domicilio = TbDomicilio.Text;
-        int  ServicioDomicilio = int.Parse(DdlServicio.Text);
         String Password = Tbcontraseña.Text.Trim();
         String Confirmacion = TbConfirmar.Text.Trim();
         if (NombreRestaurante.Length > 0 && Password.Length > 0)
         {
             if (TbConfirmar.Text == Password)
             {
-                int regresarVal = DataAccsesClientes.AltaRestaurantes(NombreRestaurante, Telefono, Domicilio, ServicioDomicilio, Password);
+                int regresarVal = DataAccsesClientes.AltaRestaurantes(NombreRestaurante, Telefono, Domicilio, Password,3);
 
                 if (regresarVal > 0)
                 {
@@ -45,12 +44,6 @@ public partial class AltaRestaurantes : System.Web.UI.Page
         {
             LblerrorRestaurante.Text = "Introdusca Los Datos Completos";
         }
-        TbConfirmar.Text = "";
-        Tbcontraseña.Text = "";
-        TbDomicilio.Text = "";
-        TbNombreRestaurante.Text = "";
-        TbTelefono.Text = "";
-        LblerrorRestaurante.Text = "";
     }
 
     protected void BtnIngreso_Click(object sender, EventArgs e)
@@ -65,7 +58,7 @@ public partial class AltaRestaurantes : System.Web.UI.Page
         {
             if (TbPassword.Text == Password)
             {
-                int regresarVal = DataAccsesClientes.AltaClientes(NombreCliente, Telefono, Domicilio, Password);
+                int regresarVal = DataAccsesClientes.AltaClientes(NombreCliente, Telefono, Domicilio, Password,2);
 
                 if (regresarVal > 0)
                 {
@@ -88,10 +81,5 @@ public partial class AltaRestaurantes : System.Web.UI.Page
         {
             LblErrores.Text = "Introdusca Los Datos Completos";
         }
-        TbContraseñaCliente.Text = "";
-        TbDomicilioCliente.Text = "";
-        TbPassword.Text = "";
-        TbTelefonoCliente.Text = "";
-        LblErrores.Text = "";
     }
 }

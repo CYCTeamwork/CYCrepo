@@ -14,17 +14,18 @@ public partial class AltaPlatillos : System.Web.UI.Page
 
     }
     protected void BtnResgistro_Click(object sender, EventArgs e)
-    {
+    {   
+        int ClaveRestaurante = int.Parse(TbClaveRestaurente.Text.Trim());
         String NombrePlatillos = TbNombrePlatillo.Text.Trim();
         String Descripcion = TbDescripcion.Text;
         int Precio = int.Parse(TbPrecio.Text);
 
-        int regresarVal = DataAccsesClientes.AltaPlatillo(NombrePlatillos, Descripcion, Precio);
+        int regresarVal = DataAccsesClientes.AltaPlatillo(ClaveRestaurante,NombrePlatillos, Descripcion, Precio);
 
         if (regresarVal > 0)
             {
             LblErrorPlatillo.ForeColor = Color.Chocolate;
-            LblErrorPlatillo.Text = "Haz Ingresado un Platillo";
+            LblErrorPlatillo.Text = "Se Ha Ingresado un Platillo";
             }
         else
             {
@@ -32,10 +33,6 @@ public partial class AltaPlatillos : System.Web.UI.Page
 
 
             }
-        TbPrecio.Text = "";
-        TbNombrePlatillo.Text = "";
-        TbDescripcion.Text = "";
         }
-
 }
 

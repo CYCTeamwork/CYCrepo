@@ -2,7 +2,9 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
-    <P class="Registrar">AQUI INGRESARAN LOS CLIENTES A NUESTRA PAGINA WEB Y LOS QUE NO ESTEN INGRESADOS SE REGISTRARAN </P> 
+    <P class="Registrar">Por favor Ingrese para hacer uso de nuestro Servicio
+
+    </P> 
     <table>
         <tr class="Registrar">
             <td>
@@ -29,5 +31,8 @@
             </td>
         </tr> 
     </table>
+   
+
+
 </asp:Content>
 

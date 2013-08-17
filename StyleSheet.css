@@ -1,5 +1,5 @@
 ﻿body {
- background: url(http://localhost:9634/CYCrepo/Imagenes/img-wallpapers-background-by-tic-tic-18456.png) no-repeat center center fixed; 
+ background: url(Imagenes/img-wallpapers-background-by-tic-tic-18456.png) no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -8,7 +8,7 @@
 .invisible {
     display:none;
 }
-.Menud{
+#Menud{
     width:200px;
     text-align:right;
     border-color:black;
@@ -17,7 +17,7 @@
     margin:5px;
 }
 .MenuRestaurantes {
-    width:300px;
+    width:auto;
     text-align:right;  
     padding:10px;
     margin:10px
@@ -241,7 +241,7 @@ float:right;
 display:block;position:relative;margin:16px auto 56px;
 }
 #MensajeB {
- background-image: url(http://localhost:9634/CYCrepo/Imagenes/FIBRA.jpeg);
+ background-image: url(Imagenes/FIBRA.jpeg);
  height:500px;
  width:400px;float:left;
  position:relative;
@@ -265,7 +265,7 @@ top:-10px;
 right:-1230px;
 }
 #divfibra {
-    background:url(http://localhost:9634/CYCrepo/Imagenes/FIBRA.jpeg);
+    background:url(Imagenes/FIBRA.jpeg);
     width:1400px;
     height:700px;
     padding:2em;
@@ -274,4 +274,7 @@ right:-1230px;
     max-height:700px;
     max-width:1400px;
     margin:auto;
+}
+#registrar {
+
 }

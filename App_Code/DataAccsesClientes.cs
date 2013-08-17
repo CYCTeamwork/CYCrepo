@@ -25,7 +25,7 @@ public class DataAccsesClientes
         try
         {
             //Aqui se adquirira la informcion de la base de datos y la cantidad
-            returnVal = ta.FillByClave(ds.Clientes, Clave);
+            returnVal = ta.FillByPorClave(ds.Clientes, Clave);
         }
         catch (Exception exp)
         {
@@ -37,7 +37,7 @@ public class DataAccsesClientes
         return ds;
     }
 
-    public static int AltaClientes(string NombreCliente, string Telefono, string Domicilio, string Contraseña)
+    public static int AltaClientes(string NombreCliente, string Telefono, string Domicilio, string Contraseña,int TipoUsuario)
     {
         Taclientes ta = new Taclientes();
         DSClientes ds = new DSClientes();
@@ -45,7 +45,7 @@ public class DataAccsesClientes
         try
         {
             //Aqui se adquirira la informcion de la base de datos y la cantidad
-            returnVal = ta.AltaClientes(NombreCliente, Telefono, Domicilio, Contraseña);
+            returnVal = ta.AltaClientes(NombreCliente, Telefono, Domicilio, Contraseña,TipoUsuario);
         }
         catch (Exception exp)
         {
@@ -65,7 +65,7 @@ public class DataAccsesClientes
         try
         {
 
-            returnVal = ta.FillByNombre(ds.Clientes, Nombre);
+            returnVal = ta.FillByPorNombre(ds.Clientes, Nombre);
         }
         catch (Exception exp)
         {
@@ -79,7 +79,7 @@ public class DataAccsesClientes
     //aqui termina lo del cliente
 
     //y empiezan los Restaruantes
-    public static int AltaRestaurantes(string NombreRestaurante, string Telefono, string Domicilio, int ServicioDomicilio, string Contraseña)
+    public static int AltaRestaurantes(string NombreRestaurante, string Telefono, string Domicilio,string Contraseña, int TipoUsuarios)
     {
         TARestaurantes ta = new TARestaurantes();
         DSRestaurantes ds = new DSRestaurantes();
@@ -87,7 +87,7 @@ public class DataAccsesClientes
         try
         {
             //Aqui se adquirira la informcion de la base de datos y la cantidad
-            returnVal = ta.AltaRestaurante(NombreRestaurante, Telefono, Domicilio, ServicioDomicilio, Contraseña);
+            returnVal = ta.AltaRestaurantes(NombreRestaurante, Telefono, Domicilio,Contraseña, TipoUsuarios);
         }
         catch (Exception exp)
         {
@@ -105,7 +105,7 @@ public class DataAccsesClientes
         try
         {
             //Aqui se adquirira la informcion de la base de datos y la cantidad
-            returnVal = ta.FillByPorClave(ds.Restaurante, Clave);
+            returnVal = ta.FillByPorID(ds.Restaurante, Clave);
         }
         catch (Exception exp)
         {
@@ -122,7 +122,7 @@ public class DataAccsesClientes
         DSRestaurantes ds = new DSRestaurantes();
         try
         {
-            returnVal = ta.FillByPorNombre(ds.Restaurante, Nombre);
+            returnVal = ta.FillByporNombre(ds.Restaurante, Nombre);
         }
         catch (Exception exp)
         {
@@ -133,7 +133,7 @@ public class DataAccsesClientes
         return ds;
     }
     //platillos
-    public static int AltaPlatillo(string NombrePlatillo, string Descripcion, int Precio)
+    public static int AltaPlatillo(int ClaveRestaurante,string NombrePlatillo, string Descripcion, int Precio)
     {
         TAPlatillos ta = new TAPlatillos();
         DSPlatillos ds = new DSPlatillos();
@@ -141,7 +141,7 @@ public class DataAccsesClientes
         try
         {
             //Aqui se adquirira la informcion de la base de datos y la cantidad
-            returnVal = ta.AltaPlatillo(NombrePlatillo, Descripcion, Precio);
+            returnVal = ta.AltaPlatillo(ClaveRestaurante, NombrePlatillo, Descripcion, Precio);
         }
         catch (Exception exp)
         {
@@ -160,7 +160,7 @@ public class DataAccsesClientes
         try
         {
             //Aqui se adquirira la informcion de la base de datos y la cantidad
-            returnValida = ta.BorrarPlatillos(NombrePlatillo);
+            returnValida = ta.BorrarPlatillo(NombrePlatillo);
         }
         catch (Exception exp)
         {
@@ -171,30 +171,6 @@ public class DataAccsesClientes
 
         return returnValida;
     }
-
-
-   /* public static DSPlatillos ModificarPlatillo(string NombrePlatillo, string Descripcion, decimal Precio)
-    {
-        TAPlatillos ta = new TAPlatillos();
-        DSPlatillos ds = new DSPlatillos();
-        int returnVal;
-        try
-        {
-            //Aqui se adquirira la informcion de la base de datos y la cantidad
-            returnVal = ta.ModificarPlatillos(NombrePlatillo, Descripcion, Precio);
-        }
-        catch (Exception exp)
-        {
-            //Esto se hace cuando la conexion truena.
-            returnVal = -1;
-            String mensajeError = exp.Message;
-        }
-
-        return returnVal;
-    }*/
-     
-
-
 }
 
  
