@@ -5,16 +5,17 @@
     <P class="Registrar">Por favor Ingrese para hacer uso de nuestro Servicio
 
     </P> 
-    <table>
-        <tr class="Registrar">
+   
+    <div id="Registrarpp"><table>
+        <tr class="Registrarp">
             <td>
-             <asp:Label ID="LblUsuario" runat="server" Text="Usuiario"></asp:Label>
+             <asp:Label ID="LblUsuario" runat="server" Text="Usuario"></asp:Label>
             </td>
             <td>
              <asp:TextBox ID="TbUsuario" runat="server"></asp:TextBox>
             </td>
         </tr>
-        <tr class="Registrar">
+        <tr class="Registrarp">
             <td>
              <asp:Label ID="LblContraseña" runat="server" Text="Contraseña"></asp:Label>
             </td>
@@ -30,7 +31,7 @@
              <asp:Label ID="LblErroresIngreso" runat="server" Text=""></asp:Label>
             </td>
         </tr> 
-    </table>
+    </table></div>
    
 
 

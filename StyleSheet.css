@@ -306,6 +306,34 @@ max-height:70px;
     height: 109px;
     width: 341px;
 }
-#Tordenes {
+.Registrarp {
+border:solid 5em black;
+border-radius:1em;
+padding: 3em;
+color:white;
+font-size:1.3em;
+}
+#Registrarpp {
+padding:3em;
+border:1px solid white;
+background:url(Imagenes/FIBRA.jpeg) no-repeat;
+max-height:70px;
+max-height:70px;
+    height: 109px;
+    width: 341px;
+}
 
+.registraraltas {
+border:solid 5em black;
+border-radius:1em;
+padding: 3em;
+color:white;
+font-size:1.3em;
+}
+#DivRestaurantes {
+    padding: 3em;
+    border: 1px solid white;
+    background: url(Imagenes/FIBRA.jpeg) no-repeat;
+    max-height: 120px;
+    max-width:1400px;
 }
