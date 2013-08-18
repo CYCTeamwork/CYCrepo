@@ -118,9 +118,9 @@ ul.style3 .first
 }
 .Menu  {
   height: 70px;
-  background-color: #232323;
+  background:url(Imagenes/FIBRA.jpeg);
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
-  width: auto;
+  width: 1500px;
 }
 .Menu  > ul > li {
   float: left;
@@ -289,4 +289,23 @@ max-width:600px;
 .figure img {
     display:block;
     max-width: 100%; 
+}
+.ordenes {
+border:solid 5em black;
+border-radius:1em;
+padding: 3em;
+color:white;
+font-size:1.3em;
+}
+#divordenes {
+padding:3em;
+border:1px solid white;
+background:url(Imagenes/FIBRA.jpeg) no-repeat;
+max-height:70px;
+max-height:70px;
+    height: 109px;
+    width: 341px;
+}
+#Tordenes {
+
 }
