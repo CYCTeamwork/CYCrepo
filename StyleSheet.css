@@ -8,7 +8,7 @@
 .invisible {
     display:none;
 }
-#Menud{
+#Menud34{
     width:200px;
     text-align:right;
     border-color:black;
@@ -98,36 +98,36 @@ ul.style3 .first
     background-position-x:center;
 }
 /*CSS de menu empiesa aqui*/
-#cssmenu ul {
+.Menu u ul {
   margin: 0;
   padding: 0;
 }
-#cssmenu li {
+.Menu u li {
   margin: 0;
   padding: 0;
 }
-#cssmenu a {
+.Menu  a {
   margin: 0;
   padding: 0;
 }
-#cssmenu ul {
+.Menu  ul {
   list-style: none;
 }
-#cssmenu a {
+.Menu  a {
   text-decoration: none;
 }
-#cssmenu {
+.Menu  {
   height: 70px;
   background-color: #232323;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
   width: auto;
 }
-#cssmenu > ul > li {
+.Menu  > ul > li {
   float: left;
   margin-left: 15px;
   position: relative;
 }
-#cssmenu > ul > li > a {
+.Menu  > ul > li > a {
   color: #a0a0a0;
   font-family: Verdana, 'Lucida Grande';
   font-size: 15px;
@@ -138,10 +138,10 @@ ul.style3 .first
   -o-transition: color .15s;
   transition: color .15s;
 }
-#cssmenu > ul > li > a:hover {
+.Menu  > ul > li > a:hover {
   color: #ffffff;
 }
-#cssmenu > ul > li > ul {
+.Menu  > ul > li > ul {
   opacity: 0;
   visibility: hidden;
   padding: 16px 0 20px 0;
@@ -163,12 +163,12 @@ ul.style3 .first
   -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
 }
-#cssmenu > ul > li:hover > ul {
+.Menu  > ul > li:hover > ul {
   opacity: 1;
   top: 65px;
   visibility: visible;
 }
-#cssmenu > ul > li > ul:before {
+.Menu  > ul > li > ul:before {
   content: '';
   display: block;
   border-color: transparent transparent #fafafa transparent;
@@ -179,10 +179,10 @@ ul.style3 .first
   left: 50%;
   margin-left: -10px;
 }
-#cssmenu > ul ul > li {
+.Menu  > ul ul > li {
   position: relative;
 }
-#cssmenu ul ul a {
+.Menu  ul ul a {
   color: #323232;
   font-family: Verdana, 'Lucida Grande';
   font-size: 13px;
@@ -194,10 +194,10 @@ ul.style3 .first
   -o-transition: background-color 0.1s;
   transition: background-color 0.1s;
 }
-#cssmenu ul ul a:hover {
+.Menu  ul ul a:hover {
   background-color: #f0f0f0;
 }
-#cssmenu ul ul ul {
+.Menu  ul ul ul {
   visibility: hidden;
   opacity: 0;
   position: absolute;
@@ -218,12 +218,12 @@ ul.style3 .first
   -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
 }
-#cssmenu ul ul > li:hover > ul {
+.Menu  ul ul > li:hover > ul {
   opacity: 1;
   left: 190px;
   visibility: visible;
 }
-#cssmenu ul ul a:hover {
+.Menu  ul ul a:hover {
   background-color: #cc2c24;
   color: #f0f0f0;
 }
@@ -259,11 +259,7 @@ display:block;position:relative;margin:16px auto 56px;
 margin:30px auto;
 max-width:600px;
 }
-#fotoRegistrate {
-position:relative; 
-top:-10px;
-right:-1230px;
-}
+
 #divfibra {
     background:url(Imagenes/FIBRA.jpeg);
     width:1400px;
@@ -275,6 +271,22 @@ right:-1230px;
     max-width:1400px;
     margin:auto;
 }
-#registrar {
+.figure {
+    position: relative;
+    display: inline-block;
+    max-width: 33%;
+}
 
+.figure .figcaption {
+    text-align: center; 
+    width:100%; height:0;
+    font-size: 25px; line-height: 0;
+    color:white;
+    position:absolute; top:50%;
+    z-index:1;
+}
+
+.figure img {
+    display:block;
+    max-width: 100%; 
 }

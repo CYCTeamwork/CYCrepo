@@ -9,6 +9,7 @@ using System.Data;
 using Taclientes = DSClientesTableAdapters.ClientesTableAdapter;
 using TARestaurantes = DSRestaurantesTableAdapters.RestauranteTableAdapter;
 using TAPlatillos = DSPlatillosTableAdapters.PlatillosTableAdapter;
+using TAordenes = DSordenesTableAdapters.OrdenesTableAdapter;
 public class DataAccsesClientes
 {
 
@@ -170,6 +171,27 @@ public class DataAccsesClientes
         }
 
         return returnValida;
+          }
+    //ordenes
+    public static int PedirOrdenes(int ClaveCliente,int ClavePlatillo,int Cantidad)
+    {
+        DSordenes ds = new DSordenes();
+        TAordenes  ta = new TAordenes ();
+        int returnVal;
+        try
+        {
+            //Aqui se adquirira la informcion de la base de datos y la cantidad
+            returnVal = ta.PedirOrden(ClaveCliente,ClavePlatillo,Cantidad);
+        }
+        catch (Exception exp)
+        {
+            //Esto se hace cuando la conexion truena.
+            returnVal = -1;
+            String mensajeError = exp.Message;
+        }
+
+        return returnVal;
+     
     }
 }
 
