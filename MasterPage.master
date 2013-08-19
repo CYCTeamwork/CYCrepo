@@ -29,19 +29,6 @@
             
         </Items>
     </asp:Menu>
-<!-- Fin Encabezado -->
-<!--
-            <div id='cssmenu'>
-<ul>
-   <li><a href='Default.aspx'><span>Inicio</span></a></li>
-   <li><a href='Ingreso.aspx'><span>Ingresar</span></a></li>
-   <li><a href='AltaRestaurantes.aspx''><span>Registros</span></a></li>
-   <li class='last'><a href='Ayuda.aspx'><span>Contacto</span></a></li>
-</ul>
-</div>--HTML menu termina-->
-
-
-
         </header>
 
 

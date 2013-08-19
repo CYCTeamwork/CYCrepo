@@ -8,7 +8,7 @@
     </p>
     <asp:DropDownList runat="server" ID="ddlSeleccionTipoUsuario" ClientIDMode="Static" >
         <asp:ListItem Text="Cliente" Value="1" />
-        <asp:ListItem Text="Restaurant" Value="2" />
+        <asp:ListItem Text="Restaurante" Value="2" />
     </asp:DropDownList> 
     <p>
 

@@ -191,7 +191,44 @@ public class DataAccsesClientes
         }
 
         return returnVal;
-     
+    }
+    public static DSClientes PorClave(int Clave, out int returnVal)
+    {
+        Taclientes ta = new Taclientes();
+        DSClientes ds = new DSClientes();
+
+        try
+        {
+            //Aqui se adquirira la informcion de la base de datos y la cantidad
+            returnVal = ta.FillByPorClave(ds.Clientes, Clave);
+        }
+        catch (Exception exp)
+        {
+            //Esto se hace cuando la conexion truena.
+            returnVal = -1;
+            String mensajeError = exp.Message;
+        }
+
+        return ds;
+    }
+    public static DSRestaurantes PorID(int Clave, out int returnVal)
+    {
+        TARestaurantes ta = new TARestaurantes();
+        DSRestaurantes ds = new DSRestaurantes();
+
+        try
+        {
+            //Aqui se adquirira la informcion de la base de datos y la cantidad
+            returnVal = ta.FillByPorID(ds.Restaurante, Clave);
+        }
+        catch (Exception exp)
+        {
+            //Esto se hace cuando la conexion truena.
+            returnVal = -1;
+            String mensajeError = exp.Message;
+        }
+
+        return ds;
     }
 }
 

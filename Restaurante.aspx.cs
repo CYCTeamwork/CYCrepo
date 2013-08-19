@@ -20,7 +20,8 @@ public partial class Restaruante : System.Web.UI.Page
 
             Lblbienvenido.Visible = true;
             Lblbienvenido.Text += ds.Restaurante[0].NombreRestaurante;
-           
+            LblID.Visible = true;
+            LblID.Text += ds.Restaurante[0].ClaveRestaurante;           
         }
     }
 }
