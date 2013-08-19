@@ -2,6 +2,7 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
+    <p> Desde Aqui usted Restaurantero tendra el control de sus platillos</p>
     <table>
        <tr>
            <td>
@@ -14,7 +15,7 @@
           </td>
      </tr>
     </table>
-   <asp:Menu runat="server" CssClass="MenuRestaurantes" ID="MnRestaruantes"  Orientation="Horizontal" >
+   <asp:Menu runat="server" CssClass="ClienteBottom" ID="MnRestaruantes"  Orientation="Horizontal" >
        <Items>    
          <asp:MenuItem text="Alta Platillos" NavigateUrl="~/AltaPlatillos.aspx"></asp:MenuItem> 
          <asp:MenuItem text="Modificar Platillos" NavigateUrl="~/ModificarPlatillos.aspx"></asp:MenuItem>

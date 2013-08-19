@@ -18,9 +18,7 @@ public partial class Ingreso : System.Web.UI.Page
         String nombreUsuario = TbUsuario.Text.Trim();
         String Password = TbContraseña.Text.Trim();
         int returnValida;
-        int ReturnVal;
         DSClientes ds = DataAccsesClientes.buscarClientePorNombre(nombreUsuario.Trim(), out returnValida);
-        DSRestaurantes Dsc = DataAccsesClientes.BusquedaPorNombre(nombreUsuario.Trim(), out ReturnVal);
         //Verificando si el usuario existe
         if (returnValida > 0)
         {
@@ -31,14 +29,6 @@ public partial class Ingreso : System.Web.UI.Page
                 //Eso significa que guaremos informacion del usuario en la session
                 Session["idUsuario"] = ds.Clientes[0].Clave_Cliente;
                 Response.Redirect("Default.aspx");
-            }
-            if (ReturnVal > 0)
-            {
-                if (Dsc.Restaurante[0].Contraseña == Password.Trim())
-                {
-                    Session["idRestaurante"] = Dsc.Restaurante[0].ClaveRestaurante;
-                    Response.Redirect("Restaurante.aspx");
-                }
             }
         }
     }

@@ -67,7 +67,7 @@
         </asp:Panel>
       <asp:Panel runat="server" ID="pnlRestaurant" ClientIDMode="Static">
           <table>
-            <tr class="AltaRestaurantes">
+            <tr class="registraraltas">
             <td style="text-align:center">
              <asp:Label ID="LblNombreRestaruante" runat="server" Text="Nombre De Restaurantes"></asp:Label>
             </td>
@@ -75,7 +75,7 @@
              <asp:TextBox ID="TbNombreRestaurante" runat="server"></asp:TextBox>
             </td>
         </tr>
-            <tr class="AltaRestaurantes">
+            <tr class="registraraltas">
             <td style="text-align:center">
              <asp:Label ID="lblTelefono" runat="server" Text="Telefono"></asp:Label>
             </td>
@@ -83,7 +83,7 @@
              <asp:TextBox ID="TbTelefono" runat="server"></asp:TextBox>
             </td>
         </tr>
-              <tr class="AltaRestaurantes">
+              <tr class="registraraltas">
             <td style="text-align:center">
              <asp:Label ID="LblDomicilio" runat="server" Text="Domicilio"></asp:Label>
             </td>
@@ -91,7 +91,7 @@
              <asp:TextBox ID="TbDomicilio" runat="server"></asp:TextBox>
             </td>
         </tr>
-        <tr class="AltaRestaurantes">
+        <tr class="registraraltas">
             <td style="text-align:center">
              <asp:Label ID="LblContraseña" runat="server" Text="Contraseña"></asp:Label>
             </td>
@@ -99,7 +99,7 @@
              <asp:TextBox ID="Tbcontraseña" TextMode="Password" runat="server"></asp:TextBox>
             </td>
         </tr>
-        <tr class="AltaRestaurantes">
+        <tr class="registraraltas">
             <td style="text-align:center">
              <asp:Label ID="LblConfirmar" runat="server" Text="Confirmar"></asp:Label>
             </td>
@@ -107,7 +107,7 @@
              <asp:TextBox ID="TbConfirmar" TextMode="Password" runat="server"></asp:TextBox>
             </td>
         </tr>
-       <tr class="AltaRestaurantes">                        
+       <tr class="registraraltas">                        
             <td style="text-align:center">  
             <asp:Button ID="BtnResgistrar" runat="server" Text="Registro "  OnClick="BtnResgistro_Click"  />
             </td>

@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class Restaruante : System.Web.UI.Page
+public partial class Cliente : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -14,14 +14,12 @@ public partial class Restaruante : System.Web.UI.Page
             //Tomo el objeto de la memoria session y le hago un casting
             //a entero para poder buscar por ID
             int id = (int)Session["idUsuario"];
-            int returnVal = 0;
-            // se tomara el tipo de usuario 
-            DSRestaurantes ds = DataAccsesClientes.BusquedaPorClave(id, out returnVal);
 
-            Lblbienvenido.Visible = true;
-            Lblbienvenido.Text += ds.Restaurante[0].NombreRestaurante;
-            LblID.Visible = true;
-            LblID.Text += ds.Restaurante[0].ClaveRestaurante;           
+            int returnVal = 0;
+            DSClientes ds = DataAccsesClientes.buscarClientePorClave(id, out returnVal);
+
+            LblBienvenida.Visible = true;
+            LblBienvenida.Text += ds.Clientes[0].NombreCliente;
         }
     }
 }

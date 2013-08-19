@@ -13,7 +13,7 @@
              <asp:Label ID="LblClaveplatillo" runat="server" Text="Clave Platillo"></asp:Label>
             </td>
             <td>
-             <asp:TextBox ID="TBclavePLatillo" runat="server"></asp:TextBox>
+             <asp:TextBox ID="TBClavePlatillo" runat="server"></asp:TextBox>
            </td>
         </tr>
         <tr class="ordenes">
@@ -24,7 +24,14 @@
              <asp:TextBox ID="TBclavecliente" runat="server"></asp:TextBox>
             </td>
         </tr>
-            
+        <tr class="ordenes">
+            <td colspan="10" style="text-align:center">
+             <asp:Label ID="LblNombrePlatillo" runat="server" Text="Nombre Platillo"></asp:Label>
+            </td>
+            <td>
+             <asp:TextBox ID="TbNombrePlatillo" runat="server"></asp:TextBox>
+            </td>
+        </tr>            
         <tr class="ordenes">
             <td colspan="10" style="text-align:center">
              <asp:Label ID="Lblcantidad" runat="server" Text="Cantidad"></asp:Label>
@@ -35,7 +42,7 @@
         </tr>
         <tr class="ordenes">                        
              <td colspan="10" style="text-align:center">  
-            <asp:Button ID="BTNpedirorden" runat="server" Text="Pedir orden "   Width="112px"  />
+            <asp:Button ID="BTNpedirorden" runat="server" Text="Pedir orden "   Width="112px" OnClick="BTNpedirorden_Click"  />
             </td>
              <td colspan="10" style="text-align:center">
              <asp:Label ID="LblErrorPlatillo" runat="server" Text="" ForeColor="Red"></asp:Label>

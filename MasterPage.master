@@ -25,8 +25,7 @@
          <asp:MenuItem text="Inicio" NavigateUrl="~/Default.aspx"></asp:MenuItem> 
             <asp:MenuItem text="Ingresar" NavigateUrl="~/Ingreso.aspx"></asp:MenuItem>
             <asp:MenuItem Text="Registrate" NavigateUrl="~/AltaRestaurantes.aspx"></asp:MenuItem>
-            <asp:MenuItem text="Ayuda" NavigateUrl="~/Ayuda.aspx"></asp:MenuItem>
-            
+            <asp:MenuItem text="Ayuda" NavigateUrl="~/Ayuda.aspx"></asp:MenuItem>         
         </Items>
     </asp:Menu>
         </header>

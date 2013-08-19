@@ -33,6 +33,6 @@ public partial class AltaPlatillos : System.Web.UI.Page
 
 
             }
-        }
+    }
 }
 

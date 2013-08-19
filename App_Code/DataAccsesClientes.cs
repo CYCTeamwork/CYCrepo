@@ -12,10 +12,8 @@ using TAPlatillos = DSPlatillosTableAdapters.PlatillosTableAdapter;
 using TAordenes = DSordenesTableAdapters.OrdenesTableAdapter;
 public class DataAccsesClientes
 {
-
     public DataAccsesClientes()
     {
-
     }
     //esto es del DataSet Clientes
     public static DSClientes buscarClientePorClave(int Clave, out int returnVal)
@@ -37,7 +35,6 @@ public class DataAccsesClientes
 
         return ds;
     }
-
     public static int AltaClientes(string NombreCliente, string Telefono, string Domicilio, string Contraseña,int TipoUsuario)
     {
         Taclientes ta = new Taclientes();
@@ -57,7 +54,6 @@ public class DataAccsesClientes
 
         return returnVal;
     }
-
     public static DSClientes buscarClientePorNombre(String Nombre, out int returnVal)
     {
         Taclientes ta = new Taclientes();
@@ -78,7 +74,6 @@ public class DataAccsesClientes
         return ds;
     }
     //aqui termina lo del cliente
-
     //y empiezan los Restaruantes
     public static int AltaRestaurantes(string NombreRestaurante, string Telefono, string Domicilio,string Contraseña, int TipoUsuarios)
     {
@@ -173,7 +168,7 @@ public class DataAccsesClientes
         return returnValida;
           }
     //ordenes
-    public static int PedirOrdenes(int ClaveCliente,int ClavePlatillo,int Cantidad)
+    public static int PedirOrdenes(int ClaveCliente,int ClavePlatillo,string NombrePlatillo,int Cantidad)
     {
         DSordenes ds = new DSordenes();
         TAordenes  ta = new TAordenes ();
@@ -181,7 +176,7 @@ public class DataAccsesClientes
         try
         {
             //Aqui se adquirira la informcion de la base de datos y la cantidad
-            returnVal = ta.PedirOrden(ClaveCliente,ClavePlatillo,Cantidad);
+            returnVal = ta.AltaOrdenes(ClaveCliente, ClavePlatillo, NombrePlatillo,Cantidad);
         }
         catch (Exception exp)
         {
@@ -227,7 +222,72 @@ public class DataAccsesClientes
             returnVal = -1;
             String mensajeError = exp.Message;
         }
+        return ds;
+    }
+    //gridview
+    public static DSClientes cPorNombre(out int ReturnValida)
+    {
+        DSClientes dsu = new DSClientes();
+        DSClientesTableAdapters.ClientesTableAdapter tac = new DSClientesTableAdapters.ClientesTableAdapter();
 
+        try
+        {
+            ReturnValida = tac.Fill(dsu.Clientes);
+        }
+        catch (Exception exp)
+        {
+            ReturnValida = -1;
+            String mensajeError = exp.Message;
+        }
+        return dsu;
+    }
+    public static DSRestaurantes ConsultaNombre(out int ReturnValida)
+    {
+        DSRestaurantes dsu = new DSRestaurantes();
+        DSRestaurantesTableAdapters.RestauranteTableAdapter tac = new DSRestaurantesTableAdapters.RestauranteTableAdapter();
+
+        try
+        {
+            ReturnValida = tac.Fill(dsu.Restaurante);
+        }
+        catch (Exception exp)
+        {
+            ReturnValida = -1;
+            String mensajeError = exp.Message;
+        }
+        return dsu;
+    }
+    public static DSRestaurantes buscarRestaurantes(string busqueda, out int returnVal)
+    {
+        returnVal = 0;
+        TARestaurantes ta = new TARestaurantes();
+        DSRestaurantes ds = new DSRestaurantes();
+
+        try
+        {
+            returnVal = ta.buscarRestaurante(ds.Restaurante, busqueda);
+        }
+        catch (Exception exp)
+        {
+            returnVal = -1;
+            String error = exp.Message;
+        }
+        return ds;
+    }
+    public static DSPlatillos busquedaPlatillo(string busqueda, out int returnVal)
+    {
+        TAPlatillos ta = new TAPlatillos();
+        DSPlatillos ds = new DSPlatillos();
+
+        try
+        {
+            returnVal = ta.busquedaPlatillos(ds.Platillos, busqueda);
+        }
+        catch (Exception exp)
+        {
+            returnVal = -1;
+            String error = exp.Message;
+        }
         return ds;
     }
 }

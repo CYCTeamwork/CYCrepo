@@ -21,7 +21,7 @@ public partial class MasterPage : System.Web.UI.MasterPage
         temp.NavigateUrl = "~/Ingreso.aspx";
         MnPrincipal.Items.Add(temp);
 
-        temp = new MenuItem("Regitrate", "Registrate");
+        temp = new MenuItem("Registrate", "Registrate");
         temp.NavigateUrl = "~/AltaRestaurantes.aspx";
         MnPrincipal.Items.Add(temp);
 
@@ -30,26 +30,14 @@ public partial class MasterPage : System.Web.UI.MasterPage
         MnPrincipal.Items.Add(temp);
 
 
-        if (Session["idUsuario"] != null && Session["idRestaurante"]!=null)
+        if (Session["idUsuario"] != null)
         {
             int idUsuario = (int)Session["idUsuario"];
             int returnVal = 0;
             DSClientes ds = DataAccsesClientes.PorClave(idUsuario, out returnVal);
-            int idRestaurante = (int)Session["idRestaurante"];
-            int returnValida = 0;
-            DSRestaurantes Dsc = DataAccsesClientes.PorID(idUsuario, out returnValida);
 
             int tipoUsuario = ds.Clientes[0].Tipousuario;
-            int TipoRestaurante = Dsc.Restaurante[0].TipoUsuario;
-
-            switch (TipoRestaurante)
-            {
-                case 3:
-                    temp = new MenuItem("Restaurante", "Restaurante");
-                    temp.NavigateUrl = "~/Restaurante.aspx";
-                    break;
-            }
-
+   
             switch (tipoUsuario)
             {
                 case 1:
@@ -59,10 +47,14 @@ public partial class MasterPage : System.Web.UI.MasterPage
 
                 case 2:
                     temp = new MenuItem("Cliente", "Cliente");
-                    temp.NavigateUrl = "~/Calculadora2.aspx";
+                    temp.NavigateUrl = "~/Cliente.aspx";
+                    break;
+
+                case 3:
+                    temp = new MenuItem("Restaurante", "Restaurante");
+                    temp.NavigateUrl = "~/Restaurante.aspx";
                     break;
             }
-
             MnPrincipal.Items.Add(temp);
         }
     }

@@ -2,8 +2,12 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
-    <table>
-        <tr class="AltaRestaurantes">
+    <p>
+
+    </p>
+    <div>
+  <table id="altaplatillosDIV">
+        <tr class="Registrarp">
             <td>
                 <asp:Label ID="LblBorrar" runat="server" Text="Nombre del Platillo"></asp:Label>
             </td>
@@ -11,7 +15,7 @@
                <asp:TextBox ID="TbBorrar" runat="server"></asp:TextBox>
             </td>
         </tr>
-        <tr class="AltaRestaurantes">
+        <tr class="Registrarp">
             <td style="text-align:center">
              <asp:Label ID="LblContraseñaplatillos" runat="server" Text="Contraseña"></asp:Label>
             </td>
@@ -19,7 +23,7 @@
              <asp:TextBox ID="TbContraseñaPlatillos" TextMode="Password" runat="server"></asp:TextBox>
             </td>
         </tr>
-        <tr class="AltaRestaurantes">
+        <tr class="Registrarp">
             <td style="text-align:center">
              <asp:Label ID="LblConfirmarPlatillo" runat="server" Text="Confirmar"></asp:Label>
             </td>
@@ -27,7 +31,7 @@
              <asp:TextBox ID="TbConfirmarplatillo" TextMode="Password" runat="server"></asp:TextBox>
             </td>
         </tr>
-        <tr class="AltaRestaurantes">                        
+        <tr class="Registrarp">                        
              <td colspan="10" style="text-align:center">  
             <asp:Button ID="BtnBorrar" runat="server" Text="Borrar Platillo "  OnClick="BtnResgistro_Click" Width="112px"  />
             </td>
@@ -37,5 +41,7 @@
         </tr>
 
     </table>
+    </div>
+  
 </asp:Content>
 
